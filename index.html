@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>Will you be my Valentine?</h1>
-
-<button color='Green'><YES, Ofcourse!!</button>
-<button color='Red'><Huhh, No</button>
-
-</body>
+  <head>
+    
+    <style>
+    body {
+      background-image: url('https://files.123freevectors.com/wp-content/original/109388-black-and-gold-heart.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    } 
+    </style>
+    
+  <script>
+  function saidNo() {
+    document.getElementById("yes").width = document.getElementById("yes").width*2;
+    document.getElementById("yes").height = document.getElementById("yes").height*2;
+    document.getElementById("no").width = document.getElementById("no").width/2;
+    document.getElementById("no").height = document.getElementById("no").height/2;
+  }
+  </script>
+  </head>
+  <body>
+    <h1 id='heading'>Will you be my Valentine?</h1>
+    
+    <button color='Green' id='yes'>YES, Ofcourse!!</button>
+    <button color='Red' id='no' onClick=saidNo()>Huhh, No</button>
+    
+  </body>
 </html>
